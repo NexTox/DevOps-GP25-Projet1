@@ -17,8 +17,7 @@ export class Main{
       }
 
     getMinutes(time) {
-        const minutes = parseInt(time.split(':')[1], 10);
-        return minutes;
+        return parseInt(time.split(':')[1], 10);
     }
     getSingleHoursLine(time) {
         const hours = parseInt(time.split(':')[0], 10);
