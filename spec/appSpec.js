@@ -1,7 +1,6 @@
 import { Main } from "../src/app.js";
 
-describe('Berlin Clock', () => {
-    context("Single Minute Row",function(){
+describe('Berlin Clock - Single Minutes Row', () => {
         const main = new Main();
         it('should light up the first lamp for 0 minute', () => {
         expect(main.getSingleMinutesLine("00:00:00")).toBe("OOOO");
@@ -19,4 +18,3 @@ describe('Berlin Clock', () => {
             expect(main.getSingleMinutesLine("00:04:00")).toBe("YYYY");
         });
     });
-  });
