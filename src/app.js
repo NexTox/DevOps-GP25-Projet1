@@ -5,6 +5,7 @@ export class Main{
         let row = "OOOO";
         if (minutes % 5 >= 1) row = "YOOO";
         if (minutes % 5 >= 2) row = "YYOO";
+        if (minutes % 5 >= 3) row = "YYYO";
         return row;
     }
 }
