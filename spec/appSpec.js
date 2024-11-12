@@ -34,5 +34,8 @@ describe('Berlin Clock ', () => {
         it('should light up the first six lamps with the third and sixth red for 30 minutes', () => {
             expect(main.getFiveMinutesLine("00:30:00")).toBe("YYRYYROOOOO");
         });
+        it('should light up all eleven lamps with the third, sixth, and ninth red for 55 minutes', () => {
+            expect(main.getFiveMinutesLine("00:55:00")).toBe("YYRYYRYYRYY");
+        });
     });
 });
