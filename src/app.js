@@ -13,5 +13,10 @@ export class Main{
         row = "Y".repeat(onLamps) + "O".repeat(11 - onLamps);
         return row;
       }
+
+    getMinute(time) {
+        const minutes = parseInt(time.split(':')[1], 10);
+        return minutes;
+    }
 }
 
