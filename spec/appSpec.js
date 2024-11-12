@@ -19,6 +19,11 @@ describe('Berlin Clock ', () => {
         it('should light up the first lamp for 4 minute', () => {
             expect(main.getSingleMinutesLine("00:04:00")).toBe("YYYY");
         });
-});
+    });
 
+    describe('Five Minutes Row', () => { 
+        it('should light up "OOOOOOOOOOO" for 0 minutes', () => {
+            expect(main.getFiveMinutesRow("00:00:00")).toBe("OOOOOOOOOOO");
+          });
+    });
 });

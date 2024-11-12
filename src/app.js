@@ -5,4 +5,9 @@ export class Main{
         const onLamps = minutes % 5;
         return "Y".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
+
+    getFiveMinutesRow(time) {
+        return "OOOOOOOOOOO";
+      }
 }
+
