@@ -6,8 +6,12 @@ export class Main{
         return "Y".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
 
-    getFiveMinutesRow(time) {
-        return "OOOOOOOOOOO";
+    getFiveMinutesLine(time) {
+        const minutes = parseInt(time.split(':')[1], 10);
+        const onLamps = Math.floor(minutes / 5);
+        let row = "OOOOOOOOOOO";
+        row = "Y".repeat(onLamps) + "O".repeat(11 - onLamps);
+        return row;
       }
 }
 
