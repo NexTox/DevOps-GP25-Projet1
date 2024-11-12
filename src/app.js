@@ -10,8 +10,10 @@ export class Main{
         const minutes = this.getMinutes(time);
         const onLamps = Math.floor(minutes / 5);
         let row = "OOOOOOOOOOO";
-        row = "Y".repeat(onLamps) + "O".repeat(11 - onLamps);
-        return row;
+
+        row = Array.from({ length: onLamps }, (_, i) => (i % 3 === 2 ? "R" : "Y")).join("") + "O".repeat(11 - onLamps);
+
+  return row;
       }
 
     getMinutes(time) {
