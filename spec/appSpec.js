@@ -38,4 +38,12 @@ describe('Berlin Clock ', () => {
             expect(main.getFiveMinutesLine("00:55:00")).toBe("YYRYYRYYRYY");
         });
     });
+    describe('Single Hours Line', ()=>{
+        it('should light up "OOOO" for 0 hours', () => {
+            expect(main.getSingleHoursLine("00:00:00")).toBe("OOOO");
+          });
+          it('should light up the first lamp for 1 hour', () => {
+            expect(main.getSingleHoursLine("01:00:00")).toBe("ROOO");
+          });
+    })
 });

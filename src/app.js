@@ -20,5 +20,12 @@ export class Main{
         const minutes = parseInt(time.split(':')[1], 10);
         return minutes;
     }
+    getSingleHoursLine(time) {
+        const hours = parseInt(time.split(':')[0], 10);
+        const onLamps = hours % 5;
+        return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
+    }
+
+    
 }
 
