@@ -8,5 +8,8 @@ describe('Berlin Clock - Single Minutes Row', () => {
     it('should light up the first lamp for 1 minute', () => {
         expect(main.getSingleMinutesLine("00:01:00")).toBe("YOOO");
       });
+      it('should light up the first lamp for 2 minute', () => {
+        expect(main.getSingleMinutesLine("00:02:00")).toBe("YYOO");
+      });
     
   });
