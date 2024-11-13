@@ -88,7 +88,16 @@ describe('Berlin Clock ', () => {
             singleHoursLine: "OOOO",
             fiveMinutesLine: "OOOOOOOOOOO",
             singleMinutesLine: "OOOO"
-          });
+            });
+        });
+        it('should return the correct Berlin clock representation for 13:17:01', () => {
+            expect(main.getBerlinClock("13:17:01")).toEqual({
+            secondsLamp: "O",
+            fiveHoursLine: "RROO",
+            singleHoursLine: "RRRO",
+            fiveMinutesLine: "YYROOOOOOOO",
+            singleMinutesLine: "YYOO"
+            });
         });
       });
 });
