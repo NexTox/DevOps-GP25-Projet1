@@ -99,5 +99,14 @@ describe('Berlin Clock ', () => {
             singleMinutesLine: "YYOO"
             });
         });
+        it('should return the correct Berlin clock representation for 23:59:59', () => {
+            expect(main.getBerlinClock("23:59:59")).toEqual({
+              secondsLamp: "O",
+              fiveHoursLine: "RRRR",
+              singleHoursLine: "RRRO",
+              fiveMinutesLine: "YYRYYRYYRYY",
+              singleMinutesLine: "YYYY"
+            });
+          });
       });
 });
