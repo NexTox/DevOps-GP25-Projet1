@@ -33,6 +33,5 @@ export class Main{
     getSecondsLamp(time) {
         return "Y";
       }
-    
 }
 
