@@ -80,7 +80,7 @@ describe('Berlin Clock ', () => {
             expect(main.getSecondsLamp("00:00:01")).toBe("O");
           });
     });
-    describe('Berlin Clock - Full Clock', () => {
+    describe('Full Clock', () => {
         it('should return the correct Berlin clock representation for 00:00:00', () => {
           expect(main.getBerlinClock("00:00:00")).toEqual({
             secondsLamp: "R",
@@ -107,6 +107,6 @@ describe('Berlin Clock ', () => {
               fiveMinutesLine: "YYRYYRYYRYY",
               singleMinutesLine: "YYYY"
             });
-          });
-      });
+        });
+    });
 });

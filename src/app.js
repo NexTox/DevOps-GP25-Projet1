@@ -44,5 +44,16 @@ export class Main{
             singleMinutesLine: this.getSingleMinutesLine(time)
           };
       }
+      displayBerlinClock(time) {
+        const berlinClock = getBerlinClock(time);
+      
+        console.log(`
+          Seconds Lamp:       ${berlinClock.secondsLamp}
+          Five Hours Line:    ${berlinClock.fiveHoursLine}
+          Single Hours Line:  ${berlinClock.singleHoursLine}
+          Five Minutes Line:  ${berlinClock.fiveMinutesLine}
+          Single Minutes Line:${berlinClock.singleMinutesLine}
+        `);
+      }
 }
 
