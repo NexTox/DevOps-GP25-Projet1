@@ -83,7 +83,7 @@ describe('Berlin Clock ', () => {
     describe('Berlin Clock - Full Clock', () => {
         it('should return the correct Berlin clock representation for 00:00:00', () => {
           expect(main.getBerlinClock("00:00:00")).toEqual({
-            secondsLamp: "Y",
+            secondsLamp: "R",
             fiveHoursLine: "OOOO",
             singleHoursLine: "OOOO",
             fiveMinutesLine: "OOOOOOOOOOO",

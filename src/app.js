@@ -37,11 +37,11 @@ export class Main{
 
       getBerlinClock(time) {
         return {
-            secondsLamp: getSecondsLamp(time),
-            fiveHoursLine: getFiveHoursLine(time),
-            singleHoursLine: getSingleHoursLine(time),
-            fiveMinutesLine: getFiveMinutesLine(time),
-            singleMinutesLine: getSingleMinutesLine(time)
+            secondsLamp: this.getSecondsLamp(time),
+            fiveHoursLine: this.getFiveHoursLine(time),
+            singleHoursLine: this.getSingleHoursLine(time),
+            fiveMinutesLine: this.getFiveMinutesLine(time),
+            singleMinutesLine: this.getSingleMinutesLine(time)
           };
       }
 }
