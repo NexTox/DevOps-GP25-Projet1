@@ -109,5 +109,7 @@ describe('Berlin Clock ', () => {
             });
         });
     });
+    main.displayBerlinClock("05:50:47");
+    main.displayBerlinClock("21:35:17");
 });
 
