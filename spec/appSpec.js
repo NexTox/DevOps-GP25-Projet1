@@ -73,8 +73,8 @@ describe('Berlin Clock ', () => {
         });
     });
     describe('Seconds Lamp', () => {
-        it('should light up the seconds lamp (Y) for even seconds', () => {
-          expect(main.getSecondsLamp("00:00:00")).toBe("Y");
+        it('should light up the seconds lamp (R) for even seconds', () => {
+          expect(main.getSecondsLamp("00:00:00")).toBe("R");
         });
         it('should light up the seconds lamp (O) for odd seconds', () => {
             expect(main.getSecondsLamp("00:00:01")).toBe("O");

@@ -32,7 +32,7 @@ export class Main{
     }
     getSecondsLamp(time) {
         const seconds = parseInt(time.split(':')[2], 10);
-        return seconds % 2 === 0 ? "Y" : "O";
+        return seconds % 2 === 0 ? "R" : "O";
       }
 }
 
