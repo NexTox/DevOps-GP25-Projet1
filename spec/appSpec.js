@@ -72,4 +72,9 @@ describe('Berlin Clock ', () => {
             expect(main.getFiveHoursLine("20:00:00")).toBe("RRRR");
         });
     });
+    describe('Seconds Lamp', () => {
+        it('should light up the seconds lamp (Y) for even seconds', () => {
+          expect(main.getSecondsLamp("00:00:00")).toBe("Y");
+        });
+      });
 });
