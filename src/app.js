@@ -31,7 +31,8 @@ export class Main{
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
     getSecondsLamp(time) {
-        return "Y";
+        const seconds = parseInt(time.split(':')[2], 10);
+        return seconds % 2 === 0 ? "Y" : "O";
       }
 }
 
