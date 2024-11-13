@@ -30,6 +30,9 @@ export class Main{
         const onLamps = Math.floor(hours / 5);
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
+    getSecondsLamp(time) {
+        return "Y";
+      }
     
 }
 
