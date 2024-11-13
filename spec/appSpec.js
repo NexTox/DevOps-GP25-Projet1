@@ -54,5 +54,5 @@ describe('Berlin Clock ', () => {
         it('should light up the first four lamps for 4 hours', () => {
             expect(main.getSingleHoursLine("04:00:00")).toBe("RRRR");
         });
-    })
+    });
 });
