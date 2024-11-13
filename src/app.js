@@ -26,8 +26,10 @@ export class Main{
     }
 
     getFiveHoursLine(time) {
-        return "OOOO";
-      }
+        const hours = parseInt(time.split(':')[0], 10);
+        const onLamps = Math.floor(hours / 5);
+        return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
+    }
     
 }
 
