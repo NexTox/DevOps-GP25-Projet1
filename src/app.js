@@ -37,12 +37,12 @@ export class Main{
 
       getBerlinClock(time) {
         return {
-          secondsLamp: "Y",
-          fiveHoursLine: "OOOO",
-          singleHoursLine: "OOOO",
-          fiveMinutesLine: "OOOOOOOOOOO",
-          singleMinutesLine: "OOOO"
-        };
+            secondsLamp: getSecondsLamp(time),
+            fiveHoursLine: getFiveHoursLine(time),
+            singleHoursLine: getSingleHoursLine(time),
+            fiveMinutesLine: getFiveMinutesLine(time),
+            singleMinutesLine: getSingleMinutesLine(time)
+          };
       }
 }
 
