@@ -45,14 +45,14 @@ export class Main{
           };
       }
       displayBerlinClock(time) {
-        const berlinClock = getBerlinClock(time);
+        const berlinClock = this.getBerlinClock(time);
       
         console.log(`
-          Seconds Lamp:       ${berlinClock.secondsLamp}
-          Five Hours Line:    ${berlinClock.fiveHoursLine}
-          Single Hours Line:  ${berlinClock.singleHoursLine}
-          Five Minutes Line:  ${berlinClock.fiveMinutesLine}
-          Single Minutes Line:${berlinClock.singleMinutesLine}
+          Seconds Lamp:        ${berlinClock.secondsLamp}
+          Five Hours Line:     ${berlinClock.fiveHoursLine}
+          Single Hours Line:   ${berlinClock.singleHoursLine}
+          Five Minutes Line:   ${berlinClock.fiveMinutesLine}
+          Single Minutes Line: ${berlinClock.singleMinutesLine}
         `);
       }
 }
