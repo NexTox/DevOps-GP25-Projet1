@@ -13,7 +13,7 @@ This project implements the Berlin Clock using Test-Driven Development (TDD). De
 - Description
 The Berlin Clock represents time using lamps in five rows:
 
-Seconds Lamp: Yellow for even seconds, off for odd.
+Seconds Lamp: Red for even seconds, off for odd.
 Five-Hour Row: 4 red lamps, each for 5-hour blocks.
 One-Hour Row: 4 red lamps for individual hours.
 Five-Minute Row: 11 lamps (yellow/red), each for 5-minute blocks.
