@@ -34,5 +34,15 @@ export class Main{
         const seconds = parseInt(time.split(':')[2], 10);
         return seconds % 2 === 0 ? "R" : "O";
       }
+
+      getBerlinClock(time) {
+        return {
+          secondsLamp: "Y",
+          fiveHoursLine: "OOOO",
+          singleHoursLine: "OOOO",
+          fiveMinutesLine: "OOOOOOOOOOO",
+          singleMinutesLine: "OOOO"
+        };
+      }
 }
 

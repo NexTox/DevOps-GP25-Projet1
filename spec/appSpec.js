@@ -79,5 +79,16 @@ describe('Berlin Clock ', () => {
         it('should light up the seconds lamp (O) for odd seconds', () => {
             expect(main.getSecondsLamp("00:00:01")).toBe("O");
           });
+    });
+    describe('Berlin Clock - Full Clock', () => {
+        it('should return the correct Berlin clock representation for 00:00:00', () => {
+          expect(main.getBerlinClock("00:00:00")).toEqual({
+            secondsLamp: "Y",
+            fiveHoursLine: "OOOO",
+            singleHoursLine: "OOOO",
+            fiveMinutesLine: "OOOOOOOOOOO",
+            singleMinutesLine: "OOOO"
+          });
+        });
       });
 });
