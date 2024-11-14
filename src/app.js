@@ -10,11 +10,9 @@ export class Main{
         const minutes = this.getMinutes(time);
         const onLamps = Math.floor(minutes / 5);
         let row = "OOOOOOOOOOO";
-
         row = Array.from({ length: onLamps }, (_, i) => (i % 3 === 2 ? "R" : "Y")).join("") + "O".repeat(11 - onLamps);
-
-  return row;
-      }
+        return row;
+    }
 
     getMinutes(time) {
         return parseInt(time.split(':')[1], 10);
@@ -33,27 +31,27 @@ export class Main{
     getSecondsLamp(time) {
         const seconds = parseInt(time.split(':')[2], 10);
         return seconds % 2 === 0 ? "R" : "O";
-      }
+    }
 
-      getBerlinClock(time) {
+    getBerlinClock(time) {
         return {
             secondsLamp: this.getSecondsLamp(time),
             fiveHoursLine: this.getFiveHoursLine(time),
             singleHoursLine: this.getSingleHoursLine(time),
             fiveMinutesLine: this.getFiveMinutesLine(time),
             singleMinutesLine: this.getSingleMinutesLine(time)
-          };
-      }
-      displayBerlinClock(time) {
-        const berlinClock = this.getBerlinClock(time);
-      
-        console.log(`
-          Seconds Lamp:        ${berlinClock.secondsLamp}
-          Five Hours Line:     ${berlinClock.fiveHoursLine}
-          Single Hours Line:   ${berlinClock.singleHoursLine}
-          Five Minutes Line:   ${berlinClock.fiveMinutesLine}
-          Single Minutes Line: ${berlinClock.singleMinutesLine}
-        `);
-      }
+        };
+    }
+
+    displayBerlinClock(time) {
+      const berlinClock = this.getBerlinClock(time);
+      console.log(`
+        Seconds Lamp:        ${berlinClock.secondsLamp}
+        Five Hours Line:     ${berlinClock.fiveHoursLine}
+        Single Hours Line:   ${berlinClock.singleHoursLine}
+        Five Minutes Line:   ${berlinClock.fiveMinutesLine}
+        Single Minutes Line: ${berlinClock.singleMinutesLine}
+      `);
+    } 
 }
 

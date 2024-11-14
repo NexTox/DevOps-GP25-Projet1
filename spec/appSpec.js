@@ -41,7 +41,7 @@ describe('Berlin Clock ', () => {
     describe('Single Hours Line', ()=>{
         it('should light up "OOOO" for 0 hours', () => {
             expect(main.getSingleHoursLine("00:00:00")).toBe("OOOO");
-          });
+        });
         it('should light up the first lamp for 1 hour', () => {
             expect(main.getSingleHoursLine("01:00:00")).toBe("ROOO");
         });
@@ -78,7 +78,7 @@ describe('Berlin Clock ', () => {
         });
         it('should light up the seconds lamp (O) for odd seconds', () => {
             expect(main.getSecondsLamp("00:00:01")).toBe("O");
-          });
+        });
     });
     describe('Full Clock', () => {
         it('should return the correct Berlin clock representation for 00:00:00', () => {
