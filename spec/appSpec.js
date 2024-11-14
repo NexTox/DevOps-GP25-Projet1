@@ -10,13 +10,13 @@ describe('Berlin Clock ', () => {
         it('should light up the first lamp for 1 minute', () => {
             expect(main.getSingleMinutesLine("00:01:00")).toBe("YOOO");
         });
-        it('should light up the first lamp for 2 minute', () => {
+        it('should light up the first two lamp for 2 minute', () => {
             expect(main.getSingleMinutesLine("00:02:00")).toBe("YYOO");
         });
-        it('should light up the first lamp for 3 minute', () => {
+        it('should light up the first three lamp for 3 minute', () => {
             expect(main.getSingleMinutesLine("00:03:00")).toBe("YYYO");
         });
-        it('should light up the first lamp for 4 minute', () => {
+        it('should light up the first four lamp for 4 minute', () => {
             expect(main.getSingleMinutesLine("00:04:00")).toBe("YYYY");
         });
     });

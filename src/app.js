@@ -14,23 +14,29 @@ export class Main{
         return row;
     }
 
-    getMinutes(time) {
-        return parseInt(time.split(':')[1], 10);
-    }
     getSingleHoursLine(time) {
-        const hours = parseInt(time.split(':')[0], 10);
+        const hours = this.getHours(time);
         const onLamps = hours % 5;
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
 
     getFiveHoursLine(time) {
-        const hours = parseInt(time.split(':')[0], 10);
+        const hours = this.getHours(time);
         const onLamps = Math.floor(hours / 5);
         return "R".repeat(onLamps) + "O".repeat(4 - onLamps);
     }
+    
     getSecondsLamp(time) {
         const seconds = parseInt(time.split(':')[2], 10);
         return seconds % 2 === 0 ? "R" : "O";
+    }
+
+    getMinutes(time) {
+      return parseInt(time.split(':')[1], 10);
+    }
+
+    getHours(time){
+    return parseInt(time.split(':')[0], 10);
     }
 
     getBerlinClock(time) {
